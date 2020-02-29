@@ -10,13 +10,13 @@ namespace Extension_Method
         private string MovieTitle;
         private string Producer;
         private string Director;
-        private double BoxOffice;
+        private string BoxOffice;
         private DateTime ReleaseDate;
 
         private Genre genre { get; set; }
 
 
-        public Movies(double rating, string movieTitle, string producer, string director, double boxOffice,DateTime releaseDate, Genre genre)
+        public Movies(double rating, string movieTitle, string producer, string director, Genre genre,string boxOffice,DateTime releaseDate)
         {
             Rating = rating;
             MovieTitle = movieTitle;
@@ -24,6 +24,7 @@ namespace Extension_Method
             Director =director;
             BoxOffice = boxOffice;
             ReleaseDate = releaseDate;
+           
 
         }
         public double rating
@@ -32,13 +33,13 @@ namespace Extension_Method
         }
         public string producer
         {
-            get => producer; set =>Producer = value;
+            get => Producer; set =>Producer = value;
         }
         public string director
         {
             get => Director; set => Director = value;
         }
-        public double boxOffice
+        public string boxOffice
         {
             get => BoxOffice; set => BoxOffice = value;
         }

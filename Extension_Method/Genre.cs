@@ -6,6 +6,6 @@ namespace Extension_Method
 {
     public enum Genre
     {
-        Action,Thriller, Scifi, Drama, Romance, Horror, Adventure, Documentary, Western, Fiction, Animation
+        Action,Thriller, Scifi, Drama, Romance, Horror, Adventure, Documentary, Western, Fiction, Animation,Mystery
     }
 }
