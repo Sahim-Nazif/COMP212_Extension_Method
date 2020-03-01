@@ -31,6 +31,10 @@ namespace Extension_Method
         {
             get => Rating;set => Rating = value;
         }
+        public string movieTitle
+        {
+            get => MovieTitle;set => MovieTitle = value;
+        }
         public string producer
         {
             get => Producer; set =>Producer = value;

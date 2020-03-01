@@ -8,6 +8,7 @@ namespace Extension_Method
     {
         static void Main(string[] args)
         {
+       
             List<Movies> movies = new List<Movies>()
            {
                new Movies(6.6,"The Invisible Man"," Blumhouse Productions", "Leigh Whannell",Genre.Scifi,"9 million USD", new DateTime(2020,02,28)),
@@ -16,6 +17,7 @@ namespace Extension_Method
 
            };
 
+                       
             var highRating = from m in movies
                             where m.rating >5
                             select m;
@@ -34,8 +36,11 @@ namespace Extension_Method
             {
                 Console.WriteLine(item.producer);
             }
+            // in order to call the exention method will do the following
 
+            var movie = new Movies(7.8, "Escape Room 2", "Columbia Pictures", "Adam Robitel", Genre.Horror, "24 million USD", new DateTime(2020, 08, 13));
 
+             movie.HorroMovie();
         }
     }
 }
